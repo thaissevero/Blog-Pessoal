@@ -42,9 +42,23 @@ public class Usuario {
 	private List<Postagem> postagem;
 	
 	/* Insira os Getters and Setters */
+		
+	//Gerar o Construtor, marcar todas as opções EXCETO o Postagem.
+	public Usuario(Long id, String nome, String foto, String usuario, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.foto = foto;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
 	
+	//Gerar o Construtor, e DESMARCAR TODAS as opções.
+	public Usuario() {
+		
+	}
+		
 	public Long getId() {
-		return id;
+			return id;
 	}
 
 	public void setId(Long id) {
